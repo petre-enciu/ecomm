@@ -37,7 +37,8 @@
                 </tr>
               <% end %>
             </tbody>
-          </table>
+          </table>  
+          <%== pagy_nav(pagy_orders) if pagy_orders && pagy_orders.pages > 1 %>        
         </div>
       </div>
     </div>

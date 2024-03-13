@@ -8,7 +8,7 @@
     <%= link_to "New order", new_admin_order_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
   <h2>Unfulfilled orders</h2>
-  <%=render 'orders_table', orders: @not_fulfilled_orders%>
+  <%=render 'orders_table', pagy_orders: @not_fulfilled_pagy, orders: @not_fulfilled_orders%>  
   <h2>Fulfilled orders</h2>
-  <%=render 'orders_table', orders: @fulfilled_orders%>
+  <%=render 'orders_table', pagy_orders: @fulfilled_pagy, orders: @fulfilled_orders %>
 </div>
